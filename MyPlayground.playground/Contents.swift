@@ -1,7 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-
+/*
 var matrizCadenas = ["Uno", "Dos", "Tres", "Cuatro"]
 var matrizNumeros = [1, 2, 3, 4]
 var matrizMixta:[Any] = ["Uno", 2, "Tres", 4, true]
@@ -83,14 +83,14 @@ for i in 0..<10 {
     num.append(nume)
 }
 
-/* suma de los items y promedio de la suma */
-/* una forma */
+// suma de los items y promedio de la suma
+// una forma
 var sum = num.reduce(0, +)
 print(sum)
 var prom = sum/2
 print(prom)
 
-/* otra forma */
+// otra forma
 var result3: [Int] = []
 var total = 0
 var promedio = 0
@@ -108,7 +108,7 @@ print("el promedio es \(promedio)")
 
 
 
-/* arreglo 10 num al azar y determinar num mayor y menor */
+// arreglo 10 num al azar y determinar num mayor y menor
 var num4: [Int] = []
 
 for i in 0..<10 {
@@ -120,27 +120,57 @@ var min = num4.min()
 print(max)
 print(min)
 
-/* arreglo A con 10 num al azar */
+// arreglo A con 10 num al azar
 var A: [Int] = []
 for i in 0..<10 {
     A.append(Int(arc4random_uniform(99) + 1))
 }
 print(A)
-/* arreglo B con 10 num al azar */
+// arreglo B con 10 num al azar
 var B: [Int] = []
 for i in 0..<10 {
     B.append(Int(arc4random_uniform(99) + 1))
 }
 print(B)
-/* arreglo C */
+// arreglo C
 var C: [Int] = []
 for i in 0..<10 {
     var numero = A[i] + B[i]
     C.append(numero)
 }
-print(C)
+print(C) */
 
 
+// DICCIONARIOS
+var vengadoresMovies = ["Iron Man": 3, "Capitán América": 2, "Hulk": 2, "Thor": 2]
+/**************/
+
+//si ingres o un numero, decir si es par
+var num1 = 29222
+if num1 % 2 == 0 {
+    print("\(num1) es par")
+} else {
+    print("\(num1) es impar")
+}
+
+// tienda
+var cantidad = 20
+var pu = 0
+var desc = 0
+
+if (cantidad > 1), (cantidad < 25) {
+    pu = Int(27.7)
+}
+if (cantidad > 26), (cantidad < 50) {
+    pu = Int(25.5)
+}
+if (cantidad > 51), (cantidad < 75) {
+    pu = Int(23.5)
+}
+if cantidad > 76 {
+    pu = Int(21.5)
+}
+print(pu)
 
 
 
