@@ -143,35 +143,112 @@ print(C) */
 
 // DICCIONARIOS
 var vengadoresMovies = ["Iron Man": 3, "Capitán América": 2, "Hulk": 2, "Thor": 2]
-/**************/
+//**************
+
+
 
 //si ingres o un numero, decir si es par
+/*
 var num1 = 29222
 if num1 % 2 == 0 {
     print("\(num1) es par")
 } else {
     print("\(num1) es impar")
-}
+}*/
 
+
+/*
 // tienda
-var cantidad = 20
-var pu = 0
-var desc = 0
+var cantidad = 57.0
+var pu = 0.0
+var desc = 0.0
 
 if (cantidad > 1), (cantidad < 25) {
-    pu = Int(27.7)
+    pu = 27.7
 }
 if (cantidad > 26), (cantidad < 50) {
-    pu = Int(25.5)
+    pu = 25.5
 }
 if (cantidad > 51), (cantidad < 75) {
-    pu = Int(23.5)
+    pu = 23.5
 }
 if cantidad > 76 {
-    pu = Int(21.5)
+    pu = 21.5
 }
-print(pu)
+print("el precio unitario es de \(pu)")
 
+var importe = pu * cantidad
+print("el importe de la compra es de \(importe)")
+
+if cantidad > 50 {
+    desc = importe - (importe * 0.15)
+} else {
+    desc = importe - (importe * 0.5)
+}
+ print ("el descuento es de \(desc)")
+
+var total = importe - desc
+print("el importe total a pagar es de \(total)")
+*/
+
+
+/*
+// curso
+var p1 = 18
+var p2 = 16
+var p3 = 13
+
+if p3 > 10 {
+    p3 = p3 + 2
+}
+print("la nota de la tercera práctica es de \(p3)")
+
+var PromedioFinal = (p1 + p2 + p3) / 3
+print("el promedio final es de \(PromedioFinal)")
+ */
+
+
+
+//institución benéfica
+var donacion = 14000.0
+var salud = 0.0
+var comedor = 0.0
+var bolsa = 0.0
+
+if donacion >= 10000.0 {
+    salud = (donacion / 100) * 30
+    comedor = (donacion / 100) * 50
+    bolsa = donacion - (salud + comedor)
+} else {
+        salud = (donacion / 100) * 25
+        comedor = (donacion / 100) * 60
+        bolsa = donacion - (salud + comedor)
+    }
+
+print("\(salud) se reparte al centro de salud")
+print("\(comedor) se reparte al comedor de niños")
+print("\(bolsa) se invierte en la bolsa")
+
+
+
+// oficina de empleos
+var categoria = "xx"
+var sexo = "femenino"
+var edad = 25
+if (sexo=="femenino") {
+    if(edad<25) {
+        categoria = "FA"
+    } else {
+        categoria = "FB"
+    }
+} else { //masculino
+    if(edad<25) {
+        categoria = "MA"
+    } else {
+        categoria = "MB"
+    }
+}
+print("categoria \(categoria)")
 
 
 
