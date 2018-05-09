@@ -208,7 +208,7 @@ print("el promedio final es de \(PromedioFinal)")
  */
 
 
-
+/*
 //institución benéfica
 var donacion = 14000.0
 var salud = 0.0
@@ -248,10 +248,52 @@ if (sexo=="femenino") {
         categoria = "MB"
     }
 }
-print("categoria \(categoria)")
+print("categoria \(categoria)")*/
+
+
+/*
+//remplazar if else if por switch
+var producto = 2
+var precio = 0
+
+switch producto {
+case 0:
+    precio = 25
+case 1:
+    precio = 15
+case 2:
+    precio = 10
+default:
+    precio = 12
+}
+print("\(precio)")*/
 
 
 
+/*
+//algoritmo que imprima numero ingresado en palabras (hast el 5)
+let numero = 3
+var texto = " "
+
+switch numero {
+case 0: texto = "cero"
+case 1: texto = "uno"
+case 2: texto = "dos"
+case 3: texto = "tres"
+case 4: texto = "cuatro"
+case 5: texto = "cinco"
+default: texto = "no es numero"
+}
+print("\(texto)")*/
 
 
 
+//FOR
+for num in 1...10 {
+    print("Número \(num)")
+}
+
+var diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+for d in diasSemana {
+    print(d)
+}
