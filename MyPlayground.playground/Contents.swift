@@ -297,3 +297,8 @@ var diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado
 for d in diasSemana {
     print(d)
 }
+                   //diccionario con for
+let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+for (animalName, legCount) in numberOfLegs {
+    print("\(animalName)s have \(legCount) legs")
+}
