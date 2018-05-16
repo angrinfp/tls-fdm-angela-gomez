@@ -289,6 +289,7 @@ print("\(texto)")*/
 
 
 //FOR
+/*
 for num in 1...10 {
     print("Número \(num)")
 }
@@ -301,4 +302,88 @@ for d in diasSemana {
 let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
 for (animalName, legCount) in numberOfLegs {
     print("\(animalName)s have \(legCount) legs")
+}*/
+
+
+//del 1 al 100
+/*
+for num in 1...100 {
+    print("Número \(num)")
+}*/
+
+
+// pares entre 1 - 100
+/*
+for num in 1...100 {
+    if(num % 2 == 0) {
+        print("\(num)")
+    }
+}*/
+
+
+// 100 numeros al azar del 1 al 100
+/*
+for num in 0..<100 {
+    var numero = num
+    numero = Int(arc4random_uniform(100))
+    print(numero)
+}*/
+
+
+//dibujar linea de 10 *
+/*
+for ar in 0...9 {
+    let asterisco: Character = "*"
+    print("\(asterisco)")
+}*/
+
+
+/*
+ Dibujar
+ *
+ **
+ ***
+ ****
+ *****
+ ******
+ *******
+ ********
+ *********
+ */
+/*
+//1.
+var triangulo = ""
+for ar in 0...9 {
+    triangulo = triangulo+"*"
+    print(triangulo)
+    
+}
+//2.
+var trian = ""
+for i in stride(from:0, to:10, by:1) {
+    trian = trian + "*"
+    print(trian)
+}
+//3.
+for a in 1...10 {
+    for b in 1...a {
+        print("*", terminator:"")//terminator vacio hace que todo sea en una linea. para que no de enter
+    }
+    print("")
+}*/
+
+
+// dibujar un cuadrado de 10 * por lado
+/*
+for i in 1...10 {
+    for j in 1...10 {
+        print("*", terminator:"")
+    }
+    print("")
+}*/
+
+
+//dibujar cuadrado sin fondo de 10 * por lado
+for i in 1...10 {
+   
 }
