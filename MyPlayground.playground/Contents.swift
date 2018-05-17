@@ -384,6 +384,43 @@ for i in 1...10 {
 
 
 //dibujar cuadrado sin fondo de 10 * por lado
+/*
 for i in 1...10 {
-   
+    for j in 1...10 {
+        if (i == 1) || (i == 10) || (j == 1) || (j == 10) {
+            print("*", terminator:"")
+        } else {
+            print(" ", terminator:"")
+        }
+    }
+    print("")
+}*/
+
+// 5 números al azar y calcular suma de dichos números
+/*
+var suma = 0
+
+for num in 0..<5 {
+    var numero = num
+    numero = Int(arc4random_uniform(10))
+    print(numero)
+    
+    suma=suma+numero
 }
+print(suma)
+*/
+
+// 5 números al azar y sacar el promedio
+var suma = 0
+var promedio = 0
+
+for num in 0..<5 {
+    var numero = num
+    numero = Int(arc4random_uniform(20))
+    print(numero)
+    
+    suma = suma + numero
+}
+promedio = suma / 5
+print(suma)
+print(promedio)
