@@ -411,6 +411,7 @@ print(suma)
 */
 
 // 5 números al azar y sacar el promedio
+/*
 var suma = 0
 var promedio = 0
 
@@ -423,4 +424,63 @@ for num in 0..<5 {
 }
 promedio = suma / 5
 print(suma)
-print(promedio)
+print(promedio)*/
+
+
+// FUNCIONES
+// universidad
+var pension: Float = 0.0
+func calcpension(categoria: String)  {
+    if categoria == "A" {
+        pension = 550.0
+    }
+    if categoria == "B" {
+        pension = 500.0
+    }
+    if categoria == "C" {
+        pension = 460.0
+    }
+    if categoria == "D" {
+        pension = 400.0
+    }
+    print(pension)
+}
+
+calcpension(categoria: "A")
+calcpension(categoria: "C")
+calcpension(categoria: "D")
+
+var descuento: Float = 0.0
+
+func calcdescuento(promedio: Float) {
+    if (promedio > 0)&&(promedio <= 13.99) {
+        descuento = 0.0
+    }
+    if (promedio >= 14.00)&&(promedio <= 15.99) {
+        descuento = 0.10
+    }
+    if (promedio >= 16.00)&&(promedio <= 17.99) {
+        descuento = 0.12
+    }
+    if (promedio >= 18.00)&&(promedio <= 20.00) {
+        descuento = 0.15
+    }
+    print(descuento)
+}
+calcdescuento(promedio: 15.00)
+
+
+
+func nuevapension(pension: Float, descuento: Float) {
+    
+    var npension :Float = 0.0
+    
+    npension = pension - (pension * descuento)
+
+    print(npension)
+    
+}
+
+
+nuevapension(pension: pension, descuento: descuento)
+
