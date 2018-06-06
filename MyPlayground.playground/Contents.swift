@@ -429,6 +429,7 @@ print(promedio)*/
 
 // FUNCIONES
 // universidad
+/*
 var pension: Float = 0.0
 func calcpension(categoria: String)  {
     if categoria == "A" {
@@ -481,6 +482,63 @@ func nuevapension(pension: Float, descuento: Float) {
     
 }
 
+nuevapension(pension: pension, descuento: descuento)*/
 
-nuevapension(pension: pension, descuento: descuento)
 
+//FUNCIONES CON RETORNO
+/*
+func euroAdolar (monto:Double) -> Double {
+    var dolar = 0.6750 * monto
+    return dolar
+}
+
+print(euroAdolar(monto: 15) + 10)*/
+
+
+//universidad
+
+func calcpension(categoria: String) -> Float  {
+    var pension: Float = 0.0
+    
+    if categoria == "A" {
+        pension = 550.0
+    }
+    if categoria == "B" {
+        pension = 500.0
+    }
+    if categoria == "C" {
+        pension = 460.0
+    }
+    if categoria == "D" {
+        pension = 400.0
+    }
+    return pension
+}
+
+print(calcpension(categoria: "A"))
+print(calcpension(categoria: "C"))
+print(calcpension(categoria: "D"))
+
+
+func calcdescuento(promedio: Float) -> Float {
+    var descuento: Float = 0.0
+    
+    if (promedio > 0)&&(promedio <= 13.99) {
+        descuento = 0.0
+    }
+    if (promedio >= 14.00)&&(promedio <= 15.99) {
+        descuento = 0.10
+    }
+    if (promedio >= 16.00)&&(promedio <= 17.99) {
+        descuento = 0.12
+    }
+    if (promedio >= 18.00)&&(promedio <= 20.00) {
+        descuento = 0.15
+    }
+    return descuento
+}
+print(calcdescuento(promedio: 15.00))
+
+
+var nuevapension = calcpension(categoria: "A") - calcdescuento(promedio: 15.00)
+print(nuevapension)
